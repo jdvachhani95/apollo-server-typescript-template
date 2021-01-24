@@ -7,6 +7,7 @@
     "start": "node 'dist/server.js'",
     "build": "tsc -p . && ncp src dist",
     "test": "jest",
+    "test:watch": "jest --verbose --detectOpenHandles",
     "start:dev": "npm run build:dev",
     "build:dev": "nodemon 'src/server.ts' --exec 'ts-node' src/server.ts -e ts,graphql"
   },
