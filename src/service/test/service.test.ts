@@ -1,10 +1,13 @@
-import { typeDefs } from "../serviceSchema";
-import resolvers from "../serviceResolver";
+import { ServiceTypeDefs } from "../serviceSchema";
+import ServiceResolvers from "../serviceResolver";
 import { graphql } from "graphql";
 import { makeExecutableSchema } from "graphql-tools";
 
 // create a mocked schema for the tests
-const schema = makeExecutableSchema({ typeDefs, resolvers });
+const schema = makeExecutableSchema({
+  typeDefs: ServiceTypeDefs,
+  resolvers: ServiceResolvers,
+});
 
 describe("User Schema", () => {
   test("Test getAllUsers query", async () => {

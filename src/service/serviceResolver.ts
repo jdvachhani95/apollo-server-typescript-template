@@ -1,5 +1,5 @@
 import { ApolloError } from "apollo-server-express";
-const resolvers = {
+const ServiceResolvers = {
   Query: {
     getAllUsers: async (_: any, args: any) => {
       try {
@@ -12,4 +12,4 @@ const resolvers = {
   },
 };
 
-export default resolvers;
+export default ServiceResolvers;

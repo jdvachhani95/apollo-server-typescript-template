@@ -1,6 +1,6 @@
 import { gql } from "apollo-server-express";
 
-export const typeDefs = gql`
+export const ServiceTypeDefs = gql`
   type User {
     name: String
   }
