@@ -16,7 +16,7 @@ A starter template for developing a graphql server, using apollo-server-express.
 
 ### Project structure:
 
-       package-scripts.js - this is where all the scripts & dependencies listed
+       package.json - this is where all the scripts & dependencies listed
        .tsconfig.json - configuration for the typescript
        .jest.config.js - configuration for the testing using jest
 
